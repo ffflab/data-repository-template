@@ -5,8 +5,10 @@ data list
 A repository that collects only dvc files.
 Pull the data/datasets you need.
 
-# Usage
+# Setup
 git clone dvc-data-list
 cd dvc-data-list
-git pull thedata.dvc
+dvc remote add -d -f icloud "$HOME/Library/Mobile Documents/com~apple~CloudDocs/dvcdata"
 
+# Use
+git pull thedata.dvc
