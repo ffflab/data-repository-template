@@ -4,3 +4,4 @@
 !.dvcignore
 !README.txt
 !*.dvc
+!requirements.txt
