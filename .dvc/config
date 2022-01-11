@@ -1,4 +1,6 @@
 [core]
-    remote = icloud
+    remote = gs
 ['remote "icloud"']
     url = /Users/m14c/Library/Mobile Documents/com~apple~CloudDocs/dvcdata
+['remote "gs"']
+    url = gs://dvcspace-e1aa9a35
