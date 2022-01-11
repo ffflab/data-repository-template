@@ -20,3 +20,13 @@ dvc push sample.dvc
 icloud_dir="$HOME/Library/Mobile Documents/com~apple~CloudDocs/dvcdata"
 dvc remote add -f -d icloud ${icloud_dir}
 dvc remote add -f -d gs gs://dvcspace-e1aa9a35
+
+# Add new data/dataset
+git clone https://github.com/ffflab/data-repository-template
+cd data-repository-template
+wget -O lenna.png "https://upload.wikimedia.org/wikipedia/en/7/7d/Lenna_%28test_image%29.png"
+dvc add lenna.png
+dvc push
+git add lenna.png.dvc
+git commit -m "add lenna"
+git push
