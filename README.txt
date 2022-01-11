@@ -13,10 +13,13 @@ cd dvc-data-list
 pip install -r requirements.txt
 
 # Pull
-dvc pull sample.dvc
+dvc pull sample.dvc  # pull target file/folder
+dvc pull             # pull all data
 
 # Push
 dvc push sample.dvc
+dvc push -r icloud   # push to target data remote
+dvc push             # push all data
 
 # Switch remote
 icloud_dir="$HOME/Library/Mobile Documents/com~apple~CloudDocs/dvcdata"
